@@ -5,7 +5,7 @@ RUN apt-get update -yq \
     && curl -sL https://deb.nodesource.com/setup_10.x | bash \
     && apt-get install nodejs -yq
 RUN conda create -n dev python=3.7 \
-	&& conda install -n dev jupyter pandas seaborn\
+	&& conda install -n dev jupyter pandas seaborn scikit-learn\
         && conda install -n dev -c conda-forge jupyterlab redis-py plotly arctic cufflinks-py camelot-py
 RUN mkdir -p /notes
 COPY entrypoint.sh /opt/
