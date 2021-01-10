@@ -1,6 +1,6 @@
 #!/bin/sh
 alias jupyter="/opt/conda/envs/dev/bin/jupyter"
-/opt/conda/envs/dev/bin/pip install alpha_vantage newsapi-python newscatcher texthearo pyarrow
+/opt/conda/envs/dev/bin/pip install alpha_vantage newsapi-python newscatcher texthearo pyarrow pyEX
 /opt/conda/envs/dev/bin/pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 jupyter labextension install jupyterlab-plotly@4.7.1
 jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget@4.7.1
